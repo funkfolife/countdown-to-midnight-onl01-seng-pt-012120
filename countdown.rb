@@ -8,10 +8,11 @@ def countdown(number)
   #puts "HAPPY NEW YEAR!"
    "HAPPY NEW YEAR!"
 end
-
-def countdown_with_sleep
-  runtime = Benchmark.measure { countdown_with_sleep(5) }
-end
+number = 5
+def countdown_with_sleep(number)
+  until number == 0 
+  sleep 1 
+  end
 end
 
   
